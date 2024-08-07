@@ -1,0 +1,8 @@
+.bgcolor{
+    background-color: gray  !important;
+}
+.table-responsive{
+    width: 25rem !important;
+    margin: 15px 0px 10px 14px !important;
+    max-height: 25vh !important;
+}

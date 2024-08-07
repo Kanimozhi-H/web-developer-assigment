@@ -1,0 +1,21 @@
+.sidebar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vw;
+    background-color: gray;
+    align-items: center;
+}
+.top{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.bottom{
+    margin-bottom: 5px;
+    transform: rotate(90deg);
+}

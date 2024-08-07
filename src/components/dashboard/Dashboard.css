@@ -1,0 +1,27 @@
+.dashboard{
+    background-color: black;
+    width: 95vw;
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hed{
+    color: white;
+    font-size: 15px;
+    margin: 5px 0px 0px 11px;
+}
+.cards{
+    display: flex;
+    margin: 5px 0px 5px 11px;
+}
+.profit{
+    height: 85px;
+    background-color: gray;
+    margin: 5px 10px 5px 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
