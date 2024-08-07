@@ -17,6 +17,17 @@ code {
   box-sizing: border-box;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+  -webkit-overflow-scrolling: touch;  
+  overflow: auto; 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  
+}
+
 .icon{
   width: 40px;
   border: 1px solid black;
@@ -27,4 +38,15 @@ code {
   align-items: center;
   color: azure;
   background-color: lightgray;
+}
+.bgcolor{
+  background-color: gray  !important;
+}
+
+.w-45{
+width: 45% !important;
+}
+
+.h-35{
+  height: 35% !important;
 }

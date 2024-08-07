@@ -2,6 +2,11 @@ import React from 'react'
 import ReactEcharts from "echarts-for-react"
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { FaGreaterThan } from "react-icons/fa6";
+import { CiCircleChevDown } from "react-icons/ci";
+import { BiDish } from "react-icons/bi";
+import { IoMdDocument } from "react-icons/io";
+
 
 const options = {
   grid: { top: 20, right: 40, bottom: 20, left: 40 },
@@ -27,20 +32,50 @@ const options = {
 
 const Activity = () => {
   return (
-    <div className='d-flex justify-content-between align-content-center flex-wrap'>
+    <div className='d-flex justify-content-between  flex-wrap align-items-center mt-2 h-100  ms-2'>
       <ReactEcharts
-      option={options}
-      style={{width: "29rem", height: "15rem" }}
-    ></ReactEcharts>
-    <div className='d-flex justify-content-center align-items-center me-1'>
-    <Card style={{ width: '18rem' }}>
-      <ListGroup variant="flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup>
-    </Card>
-    </div>
+        option={options}
+        className='w-50 h-100 bgcolor'
+      ></ReactEcharts>
+      <div className='d-flex justify-content-center align-items-center me-1 w-45 me-2 h-100'>
+        <Card className='w-100 h-100'>
+          <ListGroup variant="flush" className='h-100'>
+            <ListGroup.Item className='bgcolor'>
+              <div className='d-flex justify-content-between align-items-center'>
+                <div>
+                  <div className='icon'>
+                  <CiCircleChevDown />
+                  </div>
+                  <span>Goals</span>
+                </div>
+                <FaGreaterThan />
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item className='bgcolor'>
+              <div className='d-flex justify-content-between align-items-center'>
+                <div>
+                  <div className='icon'>
+                  <BiDish />
+                  </div>
+                  <span>Popular Dishes</span>
+                </div>
+                <FaGreaterThan />
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item className='bgcolor'>
+              <div className='d-flex justify-content-between align-items-center'>
+                <div>
+                  <div className='icon'>
+                  <IoMdDocument />
+                  </div>
+                  <span>Menus</span>
+                </div>
+                <FaGreaterThan />
+              </div>
+            </ListGroup.Item>
+          </ListGroup>
+        </Card>
+      </div>
     </div>
   )
 }

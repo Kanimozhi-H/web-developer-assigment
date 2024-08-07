@@ -23,6 +23,13 @@
     animation: fill ease-in-out 3s;
     transform: rotate(126deg);
   }
+  .f-color{
+    color: white;
+  }
+
+  .n-amo{
+    font-weight: 700;
+  }
    
   @keyframes fill {
     0% {

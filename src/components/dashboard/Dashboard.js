@@ -46,26 +46,26 @@ const Dashboard = () => {
       <div className='hed'>
         <h1>Dashboard</h1>
       </div>
-      <div className='sec1'>
-        <div className='cards'>
+      <div className='h-25 d-flex align-items-center justify-content-between'>
+        <div className='cards h-100 w-75'>
           {
             cards.map((card, i) => (
               <Card card={card} key={i} />
             ))
           }
         </div>
-        <div className='profit' >
+        <div className='profit h-100 d-flex align-items-center w-25 justify-content-between ms-3 me-3' >
           <Profit/>
         </div>
       </div>
-      <div className='sec2'>
+      <div className='sec2 h-35'>
          <Activity/>
       </div>
       <div className='sec3 d-flex align-items-center justify-content-between'>
-        <div>
+        <div className='w-50'>
         <Orders/>
         </div>
-        <div>
+        <div className='w-45 me-2'>
         <FeedBack/>
         </div>
       </div>

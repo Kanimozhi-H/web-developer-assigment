@@ -1,8 +1,14 @@
-.bgcolor{
-    background-color: gray  !important;
-}
+
 .table-responsive{
-    width: 25rem !important;
+    width: 100% !important;
     margin: 15px 0px 10px 14px !important;
     max-height: 25vh !important;
+    -ms-overflow-style: none;
+  scrollbar-width: none;  
+  -webkit-overflow-scrolling: touch;  
+  overflow: auto; 
 }
+
+.table-responsive::-webkit-scrollbar {
+    display: none;  
+  }
